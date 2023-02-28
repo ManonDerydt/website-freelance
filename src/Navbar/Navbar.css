@@ -1,0 +1,15 @@
+.menu{
+  width: 30%;
+  justify-content: space-between;
+  margin-left: 65%;
+  display: flex;
+}
+
+.li{
+  list-style: none;
+}
+
+.App-logo{
+  width: 60px;
+  object-fit: contain;
+}
