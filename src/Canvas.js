@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import "./Canvas.scss"
 
 const Canvas = () => {
     const canvasRef = useRef(null);
@@ -6,6 +7,7 @@ const Canvas = () => {
     const lerp = (start, end, time) => start + (end - start) * time;
 
     const cursor = { x: -100, y: -100 };
+    const length = 25;
     const coordinates = [...Array(length)].map(() => ({
         x: cursor.x,
         y: cursor.y,
@@ -14,7 +16,7 @@ const Canvas = () => {
 
     useEffect(() => {
         const canvas = canvasRef.current;
-        canvas.height = window.innerHeight;
+
         canvas.width = window.innerWidth;
         ctx.current = canvas.getContext("2d");
 
@@ -32,6 +34,10 @@ const Canvas = () => {
             ctx.current.clearRect(0, 0, canvas.width, canvas.height);
             const cos = Math.cos(timestamp * 0.005) * 2;
             const sin = Math.sin(timestamp * 0.005) * 2;
+
+            const color = "#08fdd8"; // définir une nouvelle couleur
+
+            ctx.current.fillStyle = color; // changer la couleur de remplissage
 
             for (let i = 0; i < length; i++) {
                 const radius = i * coordinates[i].radius;

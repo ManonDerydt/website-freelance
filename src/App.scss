@@ -89,7 +89,7 @@
 
 @media (min-width: 1024px) {
   #home, #portefolios,#skills, #about, #contact {
-    height: 100vh;
+
   }
 }
 
@@ -122,50 +122,6 @@
   /*  height: 100vh;*/
   /*}*/
 
-}
-
-body {
-  overflow: hidden;
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" height="10" width="10"><circle fill="%2366cdaa" cx="5" cy="5" r="5"/></svg>')
-  10 10,
-  auto;
-
-canvas {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  padding: 10px;
-  left: -10px;
-  top: -10px;
-  background: white;
-  height: 100%;
-  width: 100%;
-  filter: url("#goo-filter") blur(3px) contrast(7);
-}
-
-main {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr;
-  place-items: center;
-
-h1 {
-  font-family: "Fascinate", cursive;
-  font-size: 10vw;
-  opacity: 0.5;
-  background-color: #00c9ff;
-  background: linear-gradient(90deg, #00c9ff 0%, #66cdaa 100%);
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
-}
 }
 
 

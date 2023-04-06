@@ -1,16 +1,23 @@
 #portefolios{
-    padding-top: 5%;
-    margin-top: -8%;
+    padding-top: 10%;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .img-portefolios{
     width: 40%;
-    height: 290px;
+    height: 20em;
     object-fit: cover;
     margin-bottom: 1%;
     margin-right: 1%;
     position: relative;
-    z-index: -1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.text-img {
+    display: none;
 }
 
 .block-portefolios{
@@ -19,13 +26,12 @@
 
 .title-portefolios{
     text-align: left;
-    font-size: 75px;
+    font-size: 5em;
     color: #08fdd8;
     margin-top: 0;
     margin-bottom: 3%;
     margin-left: 20%;
 }
-
 
 .p-1{
     margin-left: 5%;
@@ -35,15 +41,14 @@
     margin-left: 5%;
 }
 
-
 .raise-pt{
     background: none;
     border: 2px solid #08fdd8;
     line-height: 1;
     margin: 0.5em;
     padding: 1em 2em;
-    height: 70px;
-    font-size: 20px;
+    height: 8vh;
+    font-size: 1.5rem;
     color: #08fdd8;
     transition: 0.35s;
     letter-spacing: 0.2em;
@@ -65,30 +70,19 @@
     color: #1d1d1d;
 }
 
-.text-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    z-index: -1;
-}
-
 .btn-portefolio{
     background: none;
     border: 2px solid #08fdd8;
     line-height: 1;
     margin: 0.5em;
-    padding: 1em 2em;
-    height: 70px;
-    font-size: 20px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 8vh;
+    font-size: 1.5rem;
     color: #08fdd8;
     transition: 0.35s;
     letter-spacing: 0.2em;
-    margin-top: 1%;
+    margin-top: 5%;
     margin-left: 0;
 }
 
@@ -109,4 +103,129 @@
 
 .block-1-folio{
     position: relative;
+}
+
+@media only screen and (min-width: 300px) and (max-width:768px){
+    #portefolios{
+        margin-top: 15%;
+    }
+
+    .title-portefolios{
+        text-align: left;
+        font-size: 2.6em;
+        color: #08fdd8;
+        margin-top: 0;
+        margin-bottom: 5%;
+        margin-left: 10%;
+    }
+
+    .block-portefolios{
+        margin-left: 0;
+    }
+
+    .img-portefolios{
+        width: 40%;
+        height: 9em;
+        margin-bottom: 0%;
+    }
+
+    .btn-portefolio{
+        background: none;
+        border: 2px solid #08fdd8;
+        line-height: 1;
+        padding-left: 1em;
+        padding-right: 1em;
+        height: 8vh;
+        font-size: 1.5em;
+        color: #08fdd8;
+        margin-top: 7%;
+        transition: 0.35s;
+        letter-spacing: 0.2em;
+        margin-left: 0;
+    }
+
+    .p-1{
+        margin-left: 0;
+    }
+
+    .p-2{
+        margin-left: 0;
+    }
+
+}
+
+@media  (min-width: 768px) and (max-width: 1024px){
+    .title-portefolios{
+        margin-left: 12%;
+        margin-top: 15%;
+    }
+
+    .block-portefolios{
+        margin-top: 5%;
+    }
+
+    .p-1{
+        margin-left: 0;
+    }
+
+    .p-2{
+        margin-left: 0;
+    }
+
+    .block-1-folio{
+        position: relative;
+        display: flex;
+    }
+
+    .img-portefolios{
+        width: 40%;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        position: relative;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    #portefolios{
+        margin-top: 5%;
+    }
+
+    .title-portefolios{
+        margin-left: 10%;
+        margin-top: 0;
+    }
+
+    .img-portefolios{
+        width: 40%;
+        height: 20em;
+        object-fit: cover;
+        margin-bottom: 5%;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+    }
+    .block-portefolios{
+        margin-left: 10%;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .block{
+        width: 7em;
+        height: 9em;
+        border: #08fdd8 3px solid;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s all ease;
+        padding: 1em;
+    }
 }

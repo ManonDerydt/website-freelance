@@ -1,15 +1,176 @@
-.menu{
-  width: 30%;
-  justify-content: space-between;
-  margin-left: 65%;
-  display: flex;
+.li{
+  font-size: 1.3rem;
+  margin-bottom: 5% !important;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 5%;
+  height: 35px;
+  padding-top: 4%;
 }
 
-.li{
-  list-style: none;
+.li:hover{
+  color: #08fdd8;
+}
+
+.menu{
+  display: none;
+}
+
+.content-mobile-menu{
+  display: none;
 }
 
 .App-logo{
-  width: 60px;
+  width: 14em;
   object-fit: contain;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15%;
 }
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 14%;
+  background-color: #151515;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  background-color: #151515 !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.menu-desktop {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.li {
+  font-size: 1.3rem;
+  margin-bottom: 5% !important;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 5%;
+}
+
+.my-button {
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: #0077A3;
+}
+
+.content-menu{
+  margin-top: 85%;
+}
+
+.link-menu{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.link-menu-desktop{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+
+.link-menu:link {
+  color: white;
+}
+
+/*.link-menu:visited {*/
+/*  color: #08fdd8;*/
+/*}*/
+
+.link-menu:hover {
+  color: #08fdd8;
+}
+
+.link-menu-desktop:hover {
+  color: #08fdd8;
+}
+
+.border{
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .content-mobile-menu{
+    display: block;
+  }
+
+  .content-menu {
+    display: none;
+  }
+
+  .link-menu{
+    color: #1d1d1d;
+  }
+
+  .navbar {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .menu {
+    position: static;
+    height: auto;
+    box-shadow: none;
+    background: none;
+    display: block;
+  }
+
+  .li {
+    margin-bottom: 20px;
+  }
+}
+
+@media  (min-width: 768px) and (max-width: 1024px){
+  .navbar-container{
+    display: none;
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+#skills{
+  padding-top: 5%;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title-skills{
+  text-align: left;
+  font-size: 5em;
+  color: #08fdd8;
+  margin-top: 0;
+  margin-bottom: 3%;
+  margin-left: 20%;
+}
+
+.content-icons-skills{
+  width: 80%;
+  margin-left: 15%;
+  justify-content: space-between;
+  margin-top: 8%;
+}
+
+.p-skills{
+  font-size: 1.3rem;
+  width: 80%;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.block-skills{
+  width: 25%;
+}
+
+.title-solution{
+  font-size: 1.4rem;
+}
+
+@media (max-width: 768px){
+  .block-skills{
+    text-align: left;
+    font-size: 2.6em;
+    color: #08fdd8;
+    margin-top: 0;
+    margin-bottom: 5%;
+    margin-left: 10%;
+  }
+
+  #skills{
+    margin-top: 15%;
+  }
+  .block-skills{
+    width: 100%;
+    margin-bottom: 15%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .content-icons-skills{
+    margin-left: 10%;
+  }
+
+  .title-skills{
+    text-align: left;
+    font-size: 2.6em;
+    color: #08fdd8;
+    margin-top: 0;
+    margin-bottom: 5%;
+    margin-left: 10%;
+  }
+
+  .p-skills{
+    font-size: 1.1rem!important;
+  }
+}
+
+@media  (min-width: 768px) and (max-width: 1024px){
+  .block-skills{
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .title-solution{
+    display: none;
+  }
+
+  .content-icons-skills{
+    margin-left: 10%;
+  }
+
+  .p-skills{
+    text-align: left;
+  }
+
+  .title-skills{
+    margin-left: 12%;
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+
+  .title-skills{
+    text-align: left;
+    font-size: 5em;
+    color: #08fdd8;
+    margin-top: 0;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    width: 70%;
+  }
+}
